@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./App.css";
 import Search from "./Search";
+import Footer from "./Footer";
 
 function App() {
   const [city, setCity] = useState("");
@@ -43,6 +44,7 @@ function App() {
         {error && <p className="error">{error}</p>}
         {temperature && <p>{temperature}</p>}
       </div>
+      <Footer /> {/* Include the Footer component here */}
     </div>
   );
 }
